@@ -1,7 +1,7 @@
 <?php 
 
 function base_url($path = NULL){
-	$base_url = 'http://localhost/sistem-pengelolaan-buku/';
+	$base_url = getenv("PENGELOLAAN_BUKU_BASE_URL");
 	if($path == NULL) return $base_url;
 	else return $base_url . $path;
 }
